@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        
+        body {
+            background-color: #1c1c1c;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: "VT323", monospace;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 100px;
+            -webkit-text-stroke: 1px rgb(71, 71, 71);
+            color: black; /* Ensures the text is visible on the dark background */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">
+        <h1>wsg</h1>
+    </div>
+</body>
+</html>
+
+<script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+
+<script>
+    document.addEventListener('keydown', function(e) {
+      // Prevent F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      // Prevent Ctrl+Shift+I (Inspect Element)
+      if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+      }
+      // Prevent Ctrl+U (View Source)
+      if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+      }
+    });
+  </script>
+  
